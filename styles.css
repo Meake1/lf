@@ -1,4 +1,4 @@
-/* 基础样式重置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +8,16 @@
 
 /* 全局样式 */
 :root {
-    --primary-color: #6366f1; /* 主色调：靛蓝色 */
-    --secondary-color: #10b981; /* 辅助色：翡翠绿 */
-    --accent-color: #f59e0b; /* 强调色：琥珀橙 */
-    --text-color: #1f2937; /* 文本色：深石板灰 */
-    --text-secondary: #6b7280; /* 次要文本色：石板灰 */
-    --background-color: #f9fafb; /* 背景色：超浅灰 */
-    --card-bg: #ffffff; /* 卡片背景色：白色 */
-    --section-bg-color: #f3f4f6; /* 区块背景色：浅灰 */
-    --border-color: #e5e7eb; /* 边框色：更浅的灰 */
-    --shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.1), 0 9px 28px 0 rgba(0, 0, 0, 0.05); /* 更精致的阴影 */
+    --primary-color: #6366f1; 
+    --secondary-color: #10b981; 
+    --accent-color: #f59e0b; 
+    --text-color: #1f2937; 
+    --text-secondary: #6b7280; 
+    --background-color: #f9fafb; 
+    --card-bg: #ffffff; 
+    --section-bg-color: #f3f4f6; 
+    --border-color: #e5e7eb;
+    --shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.1), 0 9px 28px 0 rgba(0, 0, 0, 0.05); 
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* 顶部导航栏 */
+
 header {
     background-color: var(--background-color);
     box-shadow: var(--shadow);
@@ -54,7 +54,14 @@ header {
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
-} 
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
 
 
 
@@ -69,14 +76,6 @@ header {
     align-items: center;
     color: white;
     font-size: 20px;
-    overflow: hidden;
-}
-
-.logo-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
 }
 
 nav ul {
@@ -117,12 +116,12 @@ nav ul li a:hover::after {
     width: 80%;
 }
 
-/* 主要内容区域 */
+
 main {
     margin-top: 80px;
 }
 
-/* 第一板块 */
+
 .hero-section {
     position: relative;
     height: 100vh;
@@ -145,7 +144,7 @@ main {
     object-fit: cover;
     object-position: center;
     z-index: -1;
-    background-color: #000; /* 图片加载前显示黑色 */
+    background-color: #000; 
 } 
 
 .hero-overlay {
@@ -264,7 +263,7 @@ main {
     background-color: black;
 }
 
-/* 第二板块：战队简介 */
+
 .team-section {
     position: relative;
     width: 100%;
@@ -360,7 +359,7 @@ main {
     background-color: var(--accent-color);
 }
 
-/* 第三板块：战队荣誉 */
+
 .hall-of-fame {
     padding: 100px 20px;
     background-color: var(--background-color);
@@ -388,7 +387,7 @@ main {
     z-index: 1;
 }
 
-/* 简化布局设计 */
+
 .hall-container {
     display: flex;
     align-items: center;
@@ -400,7 +399,7 @@ main {
     position: relative;
 }
 
-/* 标题居中样式 */
+
 .hall-of-fame .section-title {
     text-align: center !important;
     position: relative;
@@ -438,7 +437,7 @@ main {
     box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
 }
 
-/* 左侧预览区域样式 */
+
 .preview-section {
     flex: 1;
     max-width: 300px;
@@ -494,7 +493,7 @@ main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 中央装饰分隔线 - 重新美化设计 */
+
 .hall-divider {
     display: flex;
     flex-direction: column;
@@ -596,7 +595,7 @@ main {
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* 装饰星星 */
+
 .divider-star {
     position: absolute;
     width: 4px;
@@ -616,7 +615,7 @@ main {
     50% { opacity: 1; transform: scale(1.5); }
 }
 
-/* 右侧明星区域 - 现代化设计 */
+
 .stars-section {
     grid-column: 3;
     background: linear-gradient(135deg, 
@@ -644,7 +643,7 @@ main {
     background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.4), transparent);
 }
 
-/* 右侧大图区域样式 */
+
 .main-image-section {
     flex: 2;
     display: flex;
@@ -796,15 +795,15 @@ main {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* 悬浮窗 */
+
 .floating-widget {
     position: fixed;
     bottom: 30px;
     right: 30px;
     width: 65px;
     height: 65px;
-    background-color: #f59e0b; /* 橙色背景 */
-    border-radius: 50%; /* 圆形按钮 */
+    background-color: #f59e0b; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -989,10 +988,11 @@ main {
     font-weight: 400;
 }
     margin-right: 10px;
+}
 
-/* 动画效果 */
 
-/* 通用标题样式 */
+
+
 .section-title {
     font-size: 3rem;
     font-weight: 800;
@@ -1021,7 +1021,7 @@ main {
     text-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
 }
 
-/* 滚动监听动画 */
+
 .animate-on-scroll {
     opacity: 1;
     transform: translateY(0);
@@ -1029,7 +1029,7 @@ main {
 
 
 
-/* 查看更多按钮样式 */
+
 .more-button-container {
     width: 100%;
     display: flex;
@@ -1102,7 +1102,7 @@ main {
     transform: translateX(5px);
 }
 
-/* 小按钮样式  */
+
 .more-button-small {
     width: auto;
     height: 36px;
@@ -1154,16 +1154,10 @@ main {
     transform: translateX(3px);
 }
 
-/* 响应式设计 */
-/* 平板设备 */
+
 @media (max-width: 768px) {
     .header-container {
         height: 60px;
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 20px;
     }
 
     .logo-icon {
@@ -1172,18 +1166,18 @@ main {
         font-size: 16px;
     }
 
+    .logo img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
     nav ul li {
         margin-left: 15px;
     }
 
-    nav ul li a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-
     .quote {
         font-size: 24px;
-        max-width: 90%;
     }
 
     .video-button-container {
@@ -1191,64 +1185,70 @@ main {
         height: 100px;
     }
 
-    .play-icon-svg {
-        width: 150px !important;
-        height: 150px !important;
-    }
-
     .team-content {
         flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .left-section {
-        flex: none;
-        max-width: none;
-    }
-
-    .team-image {
-        transform: none;
     }
 
     .section-title {
         font-size: 28px;
     }
 
-    .hall-container {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
+    .floating-content {
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        height: 50px;
+        padding: 0 15px;
     }
 
-    .preview-section {
-        max-width: none;
-        width: 100%;
+    .logo {
+        font-size: 18px;
     }
 
-    .hall-divider {
-        width: 100%;
+    .logo img {
+        width: 25px;
+        height: 25px;
+        margin-right: 6px;
+    }
+
+    .logo-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .quote {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .video-button-container {
+        width: 80px;
         height: 80px;
-        flex-direction: row;
     }
 
-    .divider-line {
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.2) 20%, rgba(245, 158, 11, 0.4) 50%, rgba(245, 158, 11, 0.2) 80%, transparent 100%);
+    .team-title {
+        font-size: 2rem;
     }
 
-    .divider-line::before {
-        background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.6), transparent);
-        animation: dividerFlow 3s ease-in-out infinite;
+    .team-description {
+        font-size: 1.1rem;
     }
 
-    .main-image-section {
-        width: 100%;
-    }
-
-    .main-image {
-        max-height: 300px;
+    .section-title {
+        font-size: 24px;
     }
 
     .floating-widget {
@@ -1260,202 +1260,7 @@ main {
 
     .floating-content {
         width: calc(100% - 40px);
-        bottom: 80px;
+        bottom: 85px;
         right: 20px;
-    }
-
-    .floating-qrcode img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .floating-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .floating-button {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-/* 手机设备 */
-@media (max-width: 480px) {
-    .header-container {
-        height: 50px;
-        padding: 0 10px;
-    }
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .logo-icon {
-        width: 25px;
-        height: 25px;
-        font-size: 14px;
-        margin-right: 5px;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    nav ul li {
-        margin-left: 10px;
-    }
-
-    nav ul li a {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
-    .hero-section {
-        padding-bottom: 60px;
-    }
-
-    .quote {
-        font-size: 18px;
-        max-width: 95%;
-        line-height: 1.4;
-    }
-
-    .video-button-container {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 30px;
-    }
-
-    .play-icon-svg {
-        width: 120px !important;
-        height: 120px !important;
-    }
-
-    .team-content {
-        padding: 20px 15px;
-        gap: 20px;
-    }
-
-    .team-image img {
-        max-width: 280px;
-    }
-
-    .team-title {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .team-description {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .hall-of-fame {
-        padding: 60px 15px;
-    }
-
-    .hall-of-fame .section-title {
-        font-size: 24px !important;
-        margin-bottom: 30px !important;
-    }
-
-    .hall-container {
-        padding: 15px;
-        gap: 20px;
-    }
-
-    .preview-item {
-        padding: 15px;
-        border-radius: 12px;
-    }
-
-    .preview-title {
-        font-size: 14px;
-    }
-
-    .preview-desc {
-        font-size: 12px;
-    }
-
-    .preview-badge {
-        font-size: 11px;
-        padding: 4px 10px;
-    }
-
-    .hall-divider {
-        height: 60px;
-    }
-
-    .divider-ornament {
-        width: 50px;
-        height: 50px;
-    }
-
-    .divider-ornament svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .main-image {
-        max-height: 250px;
-    }
-
-    .more-button-small {
-        height: 32px;
-        font-size: 12px;
-        padding: 0 14px;
-    }
-
-    .floating-widget {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
-    }
-
-    .floating-content {
-        width: calc(100% - 30px);
-        bottom: 70px;
-        right: 15px;
-        border-radius: 15px;
-    }
-
-    .floating-header img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .floating-qrcode img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .floating-download-text {
-        font-size: 14px;
-    }
-
-    .floating-subtitle {
-        font-size: 12px;
-    }
-
-    .floating-button {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-
-    .floating-button img {
-        width: 16px;
-        height: 16px;
-        margin-right: 6px;
-    }
-
-    .video-container {
-        width: 95%;
-    }
-
-    .close-button {
-        font-size: 24px;
-        top: -30px;
     }
 }

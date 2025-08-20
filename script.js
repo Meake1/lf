@@ -1,4 +1,4 @@
-// 视频播放功能
+
 const videoButton = document.getElementById('videoButton');
 const videoModal = document.getElementById('videoModal');
 const videoPlayer = document.getElementById('videoPlayer');
@@ -24,7 +24,7 @@ videoModal.addEventListener('click', (e) => {
     }
 });
 
-// 悬浮窗功能
+
 const floatingWidget = document.getElementById('floatingWidget');
 const floatingContent = document.getElementById('floatingContent');
 
@@ -32,14 +32,14 @@ floatingWidget.addEventListener('click', () => {
     floatingContent.classList.toggle('active');
 });
 
-// 点击页面其他地方关闭悬浮窗
+
 document.addEventListener('click', (e) => {
     if (!floatingWidget.contains(e.target) && !floatingContent.contains(e.target)) {
         floatingContent.classList.remove('active');
     }
 });
 
-// 滚动监听动画
+
 const animateElements = document.querySelectorAll('.animate-on-scroll');
 
 const observer = new IntersectionObserver((entries) => {
@@ -57,7 +57,7 @@ animateElements.forEach(element => {
     observer.observe(element);
 });
 
-// 导航栏滚动效果
+
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {

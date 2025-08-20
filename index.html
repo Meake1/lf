@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legendary Realm</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="protect.js"></script>
 </head>
 <body>
-    <!-- 顶部导航栏 -->
+   
     <header>
         <div class="header-container">
             <a href="#" class="logo">
-                <div class="logo-icon">
-                    <img src="images/logo.ico" alt="传奇领域图标">
-                </div>
+                <img src="images/logo.ico" alt="传奇领域">
                 <span>传奇领域</span>
             </a>
             <nav>
@@ -157,56 +154,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-    // 反调试保护
-    (function() {
-        'use strict';
-        const devtools = {
-            open: false,
-            orientation: null
-        };
-        const threshold = 160;
-        setInterval(function() {
-            if (window.outerHeight - window.innerHeight > threshold || 
-                window.outerWidth - window.innerWidth > threshold) {
-                if (!devtools.open) {
-                    devtools.open = true;
-                    document.body.innerHTML = '<div style="text-align:center;padding:50px;font-family:Arial;"><h1>访问受限</h1><p>检测到开发者工具，请关闭后刷新页面</p></div>';
-                }
-            } else {
-                devtools.open = false;
-            }
-        }, 500);
-        
-        // 禁用F12、Ctrl+Shift+I、Ctrl+Shift+J、Ctrl+Shift+C
-        document.addEventListener('keydown', function(e) {
-            if (e.keyCode === 123 || 
-                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || 
-                (e.ctrlKey && e.shiftKey && e.keyCode === 74) || 
-                (e.ctrlKey && e.shiftKey && e.keyCode === 67)) {
-                e.preventDefault();
-                return false;
-            }
-        });
-        
-        // 禁用右键菜单
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            return false;
-        });
-        
-        // 禁用文本选择
-        document.addEventListener('selectstart', function(e) {
-            e.preventDefault();
-            return false;
-        });
-        
-        // 禁用拖拽
-        document.addEventListener('dragstart', function(e) {
-            e.preventDefault();
-            return false;
-        });
-    })();
-    </script>
 </body>
 </html>
