@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Realm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="protect.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.ico" alt="传奇领域图标">
+                </div>
+                <span>传奇领域</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">皇室挂机助手</a></li>
+                    <li><a href="sy-b/jrlf.html">加入我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 第一板块 -->
+        <section class="hero-section">
+            <img src="images/sy.jpg" alt="背景图片" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="quote">传的是手法,奇的是技术,领的是节奏,域的是情谊.</div>
+            <div class="video-button-container" id="videoButton">
+                <div class="video-play-button">
+                    <img src="images/play-button.svg" alt="播放按钮" class="play-icon-svg" style="width: 200px; height: 200px;">
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- 视频模态框 -->
+        <div class="video-modal" id="videoModal">
+            <div class="video-container">
+                <span class="close-button" id="closeButton">&times;</span>
+                <video class="video-player" id="videoPlayer" controls>
+                    <source src="images/cg.mp4" type="video/mp4">
+                    您的鸡巴浏览器不支持HTML5视频播放。
+                </video>
+            </div>
+        </div>
+
+        <!-- 第二板块：战队简介 -->
+        <section class="team-section">
+            <div class="team-background">
+                <div class="team-content">
+                    <div class="left-section">
+                        <div class="team-image">
+                            <img src="images/js.png" alt="战队图片">
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-title">战队介绍</h3>
+                        <p class="team-description">传奇领域 -legend field(简称"LF"),是一只由民间组建的游戏组织,队长无名,致力于皇室战争,战队实力在国服常年排名前十。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三板块：组织荣誉 -->
+        <section class="hall-of-fame">
+            <div class="section-container">
+                <h2 class="section-title animate-on-scroll">组织荣誉</h2>
+                <div class="hall-container">
+                    <!-- 左侧：荣誉与名人预览 -->
+                    <div class="preview-section">
+                        <div class="preview-content">
+                            <div class="preview-item">
+                                <div class="preview-badge">荣誉</div>
+                                <div class="preview-info">
+                                    <h4 class="preview-title">国服第十 · 皇室民间组织赛</h4>
+                                    <p class="preview-desc">全国民间组织赛前十，最佳成绩获得者</p>
+                                </div>
+                            </div>
+                            <div class="preview-item">
+                                <div class="preview-badge">名人</div>
+                                <div class="preview-info">
+                                    <h4 class="preview-title">无名</h4>
+                                    <p class="preview-desc">擅长卡组：天狗,狗球,球狗</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 查看更多按钮 -->
+                        <button class="more-button-small">
+                            <span class="button-text">查看更多</span>
+                            <svg class="button-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- 中央装饰分隔线 -->
+                    <div class="hall-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-ornament">
+                            <div class="divider-star"></div>
+                            <div class="divider-star"></div>
+                            <div class="divider-star"></div>
+                            <div class="divider-star"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <!-- 右侧大图区域 -->
+                    <div class="main-image-section">
+                        <img src="images/sy-zdry_y.jpg" alt="明星图片" class="main-image">
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 悬浮窗 -->
+    <div class="floating-widget" id="floatingWidget">
+        <img src="images/xfc.jpg" alt="悬浮窗图标">
+    </div>
+    <div class="floating-content" id="floatingContent">
+        <div class="floating-header">
+            <div class="floating-character">
+                <img src="images/xfc.jpg" alt="角色图标" style="width: 60px; height: 60px; border-radius: 50%;">
+            </div>
+        </div>
+        <div class="floating-body">
+            <div class="floating-qrcode">
+                <!-- 二维码图片 -->
+                <img src="images/xfc-qqqun.png" alt="QQ群二维码" style="width: 140px; height: 140px;">
+            </div>
+            <p class="floating-download-text">扫码加QQ群</p>
+            <p class="floating-subtitle">ra</p>
+            <div class="floating-buttons">
+                <a href="tencent://message/?uin=2847606120" target="_blank" class="floating-button">
+                    <img src="images/xfc-qq.png" alt="QQ图标" style="width: 18px; height: 18px; margin-right: 8px;">
+                    QQ
+                </a>
+                <a href="weixin://dl/chat?z18816260000" target="_blank" class="floating-button">
+                    <img src="images/xfc-vx.png" alt="微信图标" style="width: 18px; height: 18px; margin-right: 8px;">
+                    微信
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    // 反调试保护
+    (function() {
+        'use strict';
+        const devtools = {
+            open: false,
+            orientation: null
+        };
+        const threshold = 160;
+        setInterval(function() {
+            if (window.outerHeight - window.innerHeight > threshold || 
+                window.outerWidth - window.innerWidth > threshold) {
+                if (!devtools.open) {
+                    devtools.open = true;
+                    document.body.innerHTML = '<div style="text-align:center;padding:50px;font-family:Arial;"><h1>访问受限</h1><p>检测到开发者工具，请关闭后刷新页面</p></div>';
+                }
+            } else {
+                devtools.open = false;
+            }
+        }, 500);
+        
+        // 禁用F12、Ctrl+Shift+I、Ctrl+Shift+J、Ctrl+Shift+C
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || 
+                (e.ctrlKey && e.shiftKey && e.keyCode === 74) || 
+                (e.ctrlKey && e.shiftKey && e.keyCode === 67)) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // 禁用右键菜单
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // 禁用文本选择
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // 禁用拖拽
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    })();
+    </script>
+</body>
+</html>
